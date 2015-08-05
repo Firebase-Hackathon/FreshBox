@@ -1,18 +1,56 @@
 package njerry.freshbox;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.github.paolorotolo.appintro.AppIntro;
+import com.github.paolorotolo.appintro.AppIntroFragment;
 
 
-public class Appintro extends ActionBarActivity {
+public class Appintro extends AppIntro {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_appintro);
+    public void init(Bundle savedInstanceState) {
+        addSlide(AppIntroFragment.newInstance("FreshBox", "Want to cook an exotic meal, but don't know where to start?", R.drawable.slide3, R.color.material_deep_teal_500));
+        addSlide(AppIntroFragment.newInstance("FreshBox", "We're here to help!\nJust scroll through the recipes...", R.drawable.slide2, R.color.material_deep_teal_500));
+        addSlide(AppIntroFragment.newInstance("FreshBox", "Order your meal, and we deliver the ingredients right to your doorstep!", R.drawable.slide1, R.color.material_deep_teal_500));
+
+
+        setBarColor(Color.parseColor("#3F51B5"));
+        setSeparatorColor(Color.parseColor("#2196F3"));
+
+        showSkipButton(true);
+        showDoneButton(true);
+
+        setVibrate(true);
+        setVibrateIntensity(40);
     }
+
+    private void loadLogin(){
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onSkipPressed() {
+        loadLogin();
+    }
+
+    @Override
+    public void onDonePressed() {
+        loadLogin();
+    }
+
+    public void getStarted(View v) {
+        loadLogin();
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
