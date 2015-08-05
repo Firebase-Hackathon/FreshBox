@@ -31,23 +31,23 @@ public class Appintro extends AppIntro {
         setVibrateIntensity(40);
     }
 
-    private void loadLogin(){
-        Intent intent = new Intent(this, Login.class);
+    private void loadRegister(){
+        Intent intent = new Intent(this, Register.class);
         startActivity(intent);
     }
 
     @Override
     public void onSkipPressed() {
-        loadLogin();
+        loadRegister();
     }
 
     @Override
     public void onDonePressed() {
-        loadLogin();
+        loadRegister();
     }
 
     public void getStarted(View v) {
-        loadLogin();
+        loadRegister();
     }
 
 
