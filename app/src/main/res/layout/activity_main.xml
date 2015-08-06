@@ -82,26 +82,27 @@
         </LinearLayout>
     </com.bowyer.app.fabtoolbar.FabToolbar>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|center_vertical"
-        android:layout_marginBottom="32dp"
-        android:layout_marginRight="32dp"
-        app:borderWidth="0dp"
-        app:fabSize="normal"
-        app:rippleColor="@color/primary"/>
-
     <TextView
-        android:layout_width="369dp"
+        android:layout_width="337dp"
         android:layout_height="82dp"
         android:id="@+id/textView2"
         android:layout_gravity="center_horizontal|top"
         android:text="An example of our awesome packages. Click below to see more..."
         android:textSize="23dp"
         android:textIsSelectable="false"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:paddingLeft="40dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="77dp"
+        android:layout_height="75dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="32dp"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:rippleColor="@color/primary"/>
 
 
 </FrameLayout>
