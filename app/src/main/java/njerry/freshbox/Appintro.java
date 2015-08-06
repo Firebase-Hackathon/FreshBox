@@ -32,7 +32,7 @@ public class Appintro extends AppIntro {
     }
 
     private void loadRegister(){
-        Intent intent = new Intent(this, Register.class);
+        Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
 

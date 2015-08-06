@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FreshBox.iml" filepath="$PROJECT_DIR$/FreshBox.iml" />
       <module fileurl="file://$PROJECT_DIR$/Freshbox.iml" filepath="$PROJECT_DIR$/Freshbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
