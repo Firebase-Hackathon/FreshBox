@@ -11,13 +11,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
         app:tb_container_gravity="center"
-        android:background="#02ff561e">
+        app:tb_color="@color/primary">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fefdff">
+            app:tb_color="@color/primary">
 
             <RelativeLayout
                 android:id="@+id/call"
@@ -75,7 +75,7 @@
         android:layout_marginRight="32dp"
         app:borderWidth="0dp"
         app:fabSize="normal"
-        android:background="@drawable/more" />
+        app:rippleColor="@color/primary"/>
 
 
 </FrameLayout>
