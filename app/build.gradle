@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "njerry.freshbox"
-        minSdkVersion 10
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -20,6 +20,7 @@ android {
 
     repositories {
         mavenCentral()
+        jcenter()
     }
 }
 
@@ -29,4 +30,8 @@ dependencies {
     compile 'com.github.paolorotolo:appintro:3.1.0'
     compile 'com.parse.bolts:bolts-android:1.+'
     compile fileTree(dir: 'libs', include: 'Parse-1.9.4.jar')
+    compile 'com.bowyer.app:fab-toolbar:1.0.0@aar'
+
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.android.support:design:22.2.0'
 }

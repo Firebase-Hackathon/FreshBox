@@ -7,4 +7,8 @@
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_category">Category</string>
+    <string name="title_activity_category_fragment">CategoryFragment</string>
+    <string name="title_activity_extras_fragment">ExtrasFragment</string>
+    <string name="title_activity_order_fragments">OrderFragments</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void done(ParseException e) {
                 if (e == null) {
-                    Intent intent = new Intent(Register.this, Category.class);
+                    Intent intent = new Intent(Register.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
