@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/trialbox">
 
     <com.bowyer.app.fabtoolbar.FabToolbar
         android:id="@+id/fabtoolbar"
@@ -22,16 +23,21 @@
             <RelativeLayout
                 android:id="@+id/call"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="63dp"
                 android:layout_weight="1">
 
                 <ImageView
                     android:id="@+id/categories"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:layout_centerHorizontal="true"
                     android:scaleType="center"
-                    android:src="@drawable/categories" />
+                    android:src="@drawable/categories"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -44,9 +50,14 @@
                     android:id="@+id/extras"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:layout_centerHorizontal="true"
                     android:scaleType="center"
-                    android:src="@drawable/extras" />
+                    android:src="@drawable/extras"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -59,23 +70,38 @@
                     android:id="@+id/order"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:layout_centerHorizontal="true"
                     android:scaleType="center"
-                    android:src="@drawable/order" />
+                    android:src="@drawable/order"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
             </RelativeLayout>
         </LinearLayout>
     </com.bowyer.app.fabtoolbar.FabToolbar>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="107dp"
-        android:layout_height="109dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="right|center_vertical"
         android:layout_marginBottom="32dp"
         android:layout_marginRight="32dp"
         app:borderWidth="0dp"
         app:fabSize="normal"
         app:rippleColor="@color/primary"/>
+
+    <TextView
+        android:layout_width="369dp"
+        android:layout_height="82dp"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal|top"
+        android:text="An example of our awesome packages. Click below to see more..."
+        android:textSize="23dp"
+        android:textIsSelectable="false"
+        android:textStyle="italic" />
 
 
 </FrameLayout>
