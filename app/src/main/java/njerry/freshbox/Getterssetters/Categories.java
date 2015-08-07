@@ -1,6 +1,7 @@
 package njerry.freshbox.Getterssetters;
 
 import com.parse.ParseClassName;
+import com.parse.ParseFile;
 import com.parse.ParseObject;
 
 /**
@@ -19,5 +20,13 @@ public class Categories extends ParseObject {
 
     public void setType(String type){
         put("type", type);
+    }
+
+    public ParseFile getcategoryimage(){
+        return getParseFile("categoryimage");
+    }
+
+    public void setcategoryimage(ParseFile file){
+        put("categoryimage", file);
     }
 }

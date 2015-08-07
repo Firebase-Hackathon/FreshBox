@@ -21,7 +21,7 @@ public class ExtrasMain extends ListActivity {
         mainAdapter = new ParseQueryAdapter<extras>(this,extras.class);
         mainAdapter.setTextKey("Name");
         mainAdapter.setImageKey("Image");
-        mainAdapter.setTextKey("Price");
+
 
 
         // Default view is all meals

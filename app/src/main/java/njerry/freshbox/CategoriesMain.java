@@ -1,10 +1,20 @@
 package njerry.freshbox;
 
 import android.app.ListActivity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.parse.GetDataCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseImageView;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 
 import njerry.freshbox.Getterssetters.Categories;
@@ -18,7 +28,7 @@ public class CategoriesMain extends ListActivity {
         super.onCreate(savedInstanceState);
         getListView().setClickable(true);
 
-        mainAdapter = new ParseQueryAdapter<Categories>(this,Categories.class);
+        mainAdapter = new ParseQueryAdapter<Categories>(this, Categories.class);
         mainAdapter.setTextKey("type");
         mainAdapter.setImageKey("categoryimage");
 
@@ -48,5 +58,5 @@ public class CategoriesMain extends ListActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }
+
