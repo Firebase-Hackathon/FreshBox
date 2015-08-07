@@ -49,7 +49,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void categories (View v){
 
-        Intent intent = new Intent(getBaseContext(), Categories.class);
+        Intent intent = new Intent(getBaseContext(), CategoriesMain.class);
         startActivity(intent);
     }
 

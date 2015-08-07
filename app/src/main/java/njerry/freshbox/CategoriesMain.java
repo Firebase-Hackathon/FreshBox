@@ -1,16 +1,30 @@
 package njerry.freshbox;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Categories extends AppCompatActivity {
+import com.parse.ParseQueryAdapter;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+import njerry.freshbox.Getterssetters.Categories;
+
+
+public class CategoriesMain extends ListActivity {
+
+    private ParseQueryAdapter<Categories> mainAdapter;
+
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories);
+        getListView().setClickable(true);
+
+        mainAdapter = new ParseQueryAdapter<Categories>(this,Categories.class);
+        mainAdapter.setTextKey("type");
+        mainAdapter.setImageKey("categoryimage");
+
+
+        // Default view is all meals
+        setListAdapter(mainAdapter);
     }
 
     @Override
@@ -34,4 +48,5 @@ public class Categories extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

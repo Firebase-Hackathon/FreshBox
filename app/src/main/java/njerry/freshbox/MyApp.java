@@ -5,6 +5,8 @@ import android.app.Application;
 import com.parse.Parse;
 import com.parse.ParseObject;
 
+import njerry.freshbox.Getterssetters.Categories;
+
 /**
  * Created by njerry on 8/5/15.
  */
@@ -16,5 +18,6 @@ public class MyApp extends Application {
         Parse.enableLocalDatastore(this);
 
         Parse.initialize(this, "njUSHg0PQUz0chQtiwk7FDf5feEYFNrB5vSyZHF7", "sUlVnxyERlobrOQN86pAc1RGfqUDQd6L2G7FMxWn");
+        ParseObject.registerSubclass(Categories.class);
     }
 }
