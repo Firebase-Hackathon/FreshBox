@@ -37,8 +37,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:onClick="categories" />
+                    android:layout_alignParentTop="true" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -88,10 +87,10 @@
         android:layout_height="82dp"
         android:id="@+id/textView2"
         android:layout_gravity="center_horizontal|top"
-        android:text="An example of our awesome packages. Click below to see more..."
+        android:text="Trial Box.\nOne off order..."
         android:textSize="23dp"
         android:textIsSelectable="false"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         android:paddingLeft="40dp" />
 
     <android.support.design.widget.FloatingActionButton
@@ -103,7 +102,9 @@
         android:layout_marginRight="32dp"
         app:borderWidth="0dp"
         app:fabSize="normal"
-        app:rippleColor="@color/primary"/>
+        app:rippleColor="@color/primary">
+
+    </android.support.design.widget.FloatingActionButton>
 
 
 </FrameLayout>

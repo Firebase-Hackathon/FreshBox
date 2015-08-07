@@ -31,11 +31,11 @@ public class MainActivity extends ActionBarActivity {
     FloatingActionButton mFab;
 
     @InjectView(R.id.categories)
-    ImageView mIcCall;
+    ImageView mIcCategories;
     @InjectView(R.id.extras)
-    ImageView mIcEmail;
+    ImageView mIcExtra;
     @InjectView(R.id.order)
-    ImageView mIcForum;
+    ImageView mIcOrder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +53,18 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void extras (View v){
+
+        Intent intent = new Intent(getBaseContext(), Extras.class);
+        startActivity(intent);
+    }
+
+    public void order (View v){
+
+        Intent intent = new Intent(getBaseContext(), Order.class);
+        startActivity(intent);
+    }
+
 
     @OnClick(R.id.fab)
     void onFabClick() {
@@ -60,18 +72,22 @@ public class MainActivity extends ActionBarActivity {
     }
 
     @OnClick(R.id.categories)
-    void onClickCall() {
-        iconAnim(mIcCall);
+    void onClickCategories() {
+        iconAnim(mIcCategories);
+        categories(mIcCategories);
+
     }
 
     @OnClick(R.id.extras)
-    void onClickEmail() {
-        iconAnim(mIcEmail);
+    void onClickExtra() {
+        iconAnim(mIcExtra);
+        extras(mIcExtra);
     }
 
     @OnClick(R.id.order)
-    void onClickForum() {
-        iconAnim(mIcForum);
+    void onClickOrder() {
+        iconAnim(mIcOrder);
+        order(mIcOrder);
     }
 
     private void iconAnim(View icon) {

@@ -11,4 +11,6 @@
     <string name="title_activity_extras_fragment">ExtrasFragment</string>
     <string name="title_activity_order_fragments">OrderFragments</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_extras">Extras</string>
+    <string name="title_activity_order">Order</string>
 </resources>

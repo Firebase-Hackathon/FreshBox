@@ -57,7 +57,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:onClick="signIn"
-            android:text="Sign In" />
+            android:text="Sign In"
+            android:background="#4991ff"
+            android:textColor="#ffffffff" />
     </LinearLayout>
 
     <Button
@@ -65,7 +67,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="showRegistration"
-        android:text="Dont Have An Account? Register" />
+        android:text="Dont Have An Account? Register"
+        android:background="#4991ff"
+        android:textColor="#ffffffff" />
 
 </LinearLayout>
 
