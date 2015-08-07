@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void extras (View v){
 
-        Intent intent = new Intent(getBaseContext(), Extras.class);
+        Intent intent = new Intent(getBaseContext(), ExtrasMain.class);
         startActivity(intent);
     }
 

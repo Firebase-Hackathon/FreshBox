@@ -1,19 +1,32 @@
 package njerry.freshbox;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.parse.ParseQueryAdapter;
 
-public class Extras extends ActionBarActivity {
+import njerry.freshbox.Getterssetters.extras;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+public class ExtrasMain extends ListActivity {
+
+    private ParseQueryAdapter<extras> mainAdapter;
+
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_extras);
-    }
+        getListView().setClickable(true);
 
+        mainAdapter = new ParseQueryAdapter<extras>(this,extras.class);
+        mainAdapter.setTextKey("Name");
+        mainAdapter.setImageKey("Image");
+        mainAdapter.setTextKey("Price");
+
+
+        // Default view is all meals
+        setListAdapter(mainAdapter);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
